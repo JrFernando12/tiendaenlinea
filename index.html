@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Playeras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <h1>----FONTY-----</h1>
+        </div>
+        <nav>
+            <section id="shop" class="products">
+                <h2>Tienda</h2>
+                <label for="category-select">Selecciona una categoría:</label>
+                <select id="category-select">
+                    <option value="all">Todas</option>
+                    <option value="anime">Anime</option>
+                    <option value="deportes">Deportes</option>
+                </select>
+                <div id="product-list">
+                    <!-- Aquí se generarán los productos -->
+                </div>
+            </section>
+            
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#shop">Tienda</a></li>
+                <li><a href="#cart">Carrito</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bienvenido a una nueva experiencia de estilo</h2>
+        <p>Las mejores playeras a los mejores precios</p>
+    </section>
+
+    <section id="shop" class="products">
+        <!-- Repetimos para 30 productos -->
+        <div class="product">
+            <img src="img/foto1.jpeg" alt="Playera 1">
+            <h3>Playera 1</h3>
+            <p>Q100.00</p>
+            <button onclick="addToCart('Playera 1', 100)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto2.jpeg" alt="Playera 2">
+            <h3>Playera 2</h3>
+            <p>Q120.00</p>
+            <button onclick="addToCart('Playera 2', 120)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto3.jpeg" alt="Playera 3">
+            <h3>Playera 3</h3>
+            <p>Q130.00</p>
+            <button onclick="addToCart('Playera 3', 130)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto4.jpg" alt="Playera 4">
+            <h3>Playera 4</h3>
+            <p>Q90.00</p>
+            <button onclick="addToCart('Playera 4', 90)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto5.jpeg" alt="Playera 5">
+            <h3>Playera 5</h3>
+            <p>Q150.00</p>
+            <button onclick="addToCart('Playera 5', 150)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto6.jpg" alt="Playera 6">
+            <h3>Playera 6</h3>
+            <p>Q110.00</p>
+            <button onclick="addToCart('Playera 6', 110)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto7.jpeg" alt="Playera 7">
+            <h3>Playera 7</h3>
+            <p>Q140.00</p>
+            <button onclick="addToCart('Playera 7', 140)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto8.jpg" alt="Playera 8">
+            <h3>Playera 8</h3>
+            <p>Q160.00</p>
+            <button onclick="addToCart('Playera 8', 160)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto9.jpg" alt="Playera 9">
+            <h3>Playera 9</h3>
+            <p>Q170.00</p>
+            <button onclick="addToCart('Playera 9', 170)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto10.jpg" alt="Playera 10">
+            <h3>Playera 10</h3>
+            <p>Q180.00</p>
+            <button onclick="addToCart('Playera 10', 180)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto11.jpg" alt="Playera 11">
+            <h3>Playera 11</h3>
+            <p>Q100.00</p>
+            <button onclick="addToCart('Playera 11', 100)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto12.jpg" alt="Playera 12">
+            <h3>Playera 12</h3>
+            <p>Q90.00</p>
+            <button onclick="addToCart('Playera 12', 90)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto13.jpg" alt="Playera 13">
+            <h3>Playera 13</h3>
+            <p>Q140.00</p>
+            <button onclick="addToCart('Playera 13', 140)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto14.png" alt="Playera 14">
+            <h3>Playera 14</h3>
+            <p>Q130.00</p>
+            <button onclick="addToCart('Playera 14', 130)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto15.jpeg" alt="Playera 15">
+            <h3>Playera 15</h3>
+            <p>Q120.00</p>
+            <button onclick="addToCart('Playera 15', 120)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto16.jpeg" alt="Playera 16">
+            <h3>Playera 16</h3>
+            <p>Q160.00</p>
+            <button onclick="addToCart('Playera 16', 160)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto17.jpeg" alt="Playera 17">
+            <h3>Playera 17</h3>
+            <p>Q170.00</p>
+            <button onclick="addToCart('Playera 17', 170)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto18.jpeg" alt="Playera 18">
+            <h3>Playera 18</h3>
+            <p>Q180.00</p>
+            <button onclick="addToCart('Playera 18', 180)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto19.jpg" alt="Playera 19">
+            <h3>Playera 19</h3>
+            <p>Q100.00</p>
+            <button onclick="addToCart('Playera 19', 100)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto20.png" alt="Playera 20">
+            <h3>Playera 20</h3>
+            <p>Q90.00</p>
+            <button onclick="addToCart('Playera 20', 90)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto21.jpg" alt="Playera 21">
+            <h3>Playera 21</h3>
+            <p>Q140.00</p>
+            <button onclick="addToCart('Playera 21', 140)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto22.jpeg" alt="Playera 22">
+            <h3>Playera 22</h3>
+            <p>Q130.00</p>
+            <button onclick="addToCart('Playera 22', 130)">Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <img src="img/foto23.jpg" alt="Playera 23">
+            <h3>Playera 23</h3>
+            <p>Q120.00</p>
+            <button onclick="addToCart('Playera 23', 120)">Añadir al carrito</button>
+        </div>
+        <divAquí tienes el código completo para la tienda de playeras en línea con 30 productos:
+
+
+
+    
+    <section id="cart">
+        <h2>Tu Carrito</h2>
+        <div id="cart-items"></div>
+        <h3>Total: Q<span id="total">0</span></h3>
+        <button id="checkout">Pagar</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda de Playeras. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="logica.js"></script>
+</body>
+</html>
